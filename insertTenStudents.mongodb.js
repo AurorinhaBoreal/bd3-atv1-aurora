@@ -1,0 +1,111 @@
+const studentData = [
+    {
+        "cod_aluno": 1,
+        "nome": "Carlos Pereira",
+        "cpf": "677.528.820-46",
+        "rg": "12.185.917-4",
+        "email": "carlinhos@gmail.com",
+        "data_nasc": "12/02/1990",
+        "telefone_aluno": "(19) 98142-5634",
+        "telefone_responsavel": "(11) 98564-2794"
+    },
+    {
+        "cod_aluno": 2,
+        "nome": "Guilherme Alvares Cabral",
+        "cpf": "668.792.230-01",
+        "rg": "24.811.546-7",
+        "email": "guilherminho@gmail.com", 
+        "data_nasc": "17/02/1994",
+        "telefone_aluno": "(15) 99571-3603",
+        "telefone_responsavel": "(18) 97276-3415"
+    },
+    {
+        "cod_aluno": 3,
+        "nome": "Bruno Fedeira da Milva",
+        "cpf": "715.302.310-00",
+        "rg": "21.382.220-9",
+        "email": "bruninho@gmail.com", 
+        "data_nasc": "19/03/2000",
+        "telefone_aluno": "(16) 98014-7651",
+        "telefone_responsavel": "(17) 99725-9654"
+    },
+    {
+        "cod_aluno": 4,
+        "nome": "Aurora Kruschewsky",
+        "cpf": "625.580.700-29",
+        "rg": "41.170.763-2",
+        "email": "aurorinha@gmail.com", 
+        "data_nasc": "25/071985",
+        "telefone_aluno": "(19) 99685-1454",
+        "telefone_responsavel": "(14) 96718-8154"
+    },
+    {
+        "cod_aluno": 5,
+        "nome": "Turibau Pereira",
+        "cpf": "162.022.920-08",
+        "rg": "36.929.263-7",
+        "email": "turibinho@gmail.com", 
+        "data_nasc": "12/06¹1987",
+        "telefone_aluno": "(16) 99631-6525",
+        "telefone_responsavel": "(19) 97345-3618"
+    },
+    {
+        "cod_aluno": 6,
+        "nome": "Berimbau Banabara",
+        "cpf": "914.265.040-20",
+        "rg": "13.652.168-X",
+        "email": "berimbinho@gmail.com", 
+        "data_nasc": "08/09/1999",
+        "telefone_aluno": "(18) 99316-4233",
+        "telefone_responsavel": "(18) 98867-5592"
+    },
+    {
+        "cod_aluno": 7,
+        "nome": "Uruguaiano Uruguaio",
+        "cpf": "990.659.540-07",
+        "rg": "37.965.141-5",
+        "email": "uruguinho@gmail.com", 
+        "data_nasc": "01/01/2001",
+        "telefone_aluno": "(15) 99316-7123",
+        "telefone_responsavel": "(16) 98162-9146"
+    },
+    {
+        "cod_aluno": 8,
+        "nome": "Chuck Norris",
+        "cpf": "015.361.820-52",
+        "rg": "45.418.187-5",
+        "email": "chuckinho@gmail.com", 
+        "data_nasc": "15/05/2005",
+        "telefone_aluno": "(11) 98357-3098",
+        "telefone_responsavel": "(16) 97504-9257"
+    },
+    {
+        "cod_aluno": 9,
+        "nome": "Roberto Carlos",
+        "cpf": "277.871.620-31",
+        "rg": "41.395.164-9",
+        "email": "robertinho@gmail.com", 
+        "data_nasc": "19/11/2011",
+        "telefone_aluno": "(14) 97551-2313",
+        "telefone_responsavel": "(13) 98609-2258"
+    },
+    {
+        "cod_aluno": 10,
+        "nome": "André Pereira",
+        "cpf": "483.780.130-73",
+        "rg": "43.243.233-4",
+        "email": "andrinho@gmail.com", 
+        "data_nasc": "22/02/2002",
+        "telefone_aluno": "(17) 99474-7783",
+        "telefone_responsavel": "(12) 98070-5611"
+    }
+]
+
+const database = "BD3-NoSQL-AtlasMongoDB11"
+
+const studentColl= "bd3-nosql-atv1"
+
+use(database)
+
+db[studentColl].insertMany(studentData)
+
